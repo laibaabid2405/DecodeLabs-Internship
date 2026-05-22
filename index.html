@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verdana — Plant Wellbeing Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========== HEADER / NAV =========== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="nav__logo" aria-label="Verdana home">
+        <span class="nav__logo-icon" aria-hidden="true">✦</span>
+        <span class="nav__logo-text">Verdana</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#care-guide" class="nav__link">Care Guide</a></li>
+        <li><a href="#plants" class="nav__link">Plants</a></li>
+        <li><a href="#diagnosis" class="nav__link">Diagnosis</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__cta" aria-label="Start your plant wellness journey">Start Growing</button>
+      <button class="nav__burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =========== HERO =========== -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__noise" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Plant Wellbeing Studio · Est. 2026</p>
+        <h1 class="hero__title">
+          Every Leaf<br />
+          <em>Tells a Story.</em>
+        </h1>
+        <p class="hero__subtitle">
+          Science-backed care rituals, diagnostics, and botanical wisdom — crafted for plants that deserve to thrive.
+        </p>
+        <div class="hero__actions">
+          <a href="#care-guide" class="btn btn--primary">Explore Care Guide</a>
+          <a href="#diagnosis" class="btn btn--ghost">Diagnose My Plant</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__plant-card">
+          <div class="hero__plant-icon">🌿</div>
+          <div class="hero__plant-info">
+            <span class="hero__plant-name">Monstera Deliciosa</span>
+            <span class="hero__plant-status hero__plant-status--healthy">● Thriving</span>
+          </div>
+          <div class="hero__plant-stats">
+            <div class="hero__stat">
+              <span class="hero__stat-label">Humidity</span>
+              <div class="hero__stat-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                <div class="hero__stat-fill" style="--fill: 72%"></div>
+              </div>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-label">Light</span>
+              <div class="hero__stat-bar" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                <div class="hero__stat-fill" style="--fill: 58%"></div>
+              </div>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-label">Water</span>
+              <div class="hero__stat-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="hero__stat-fill" style="--fill: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- =========== STATS TICKER =========== -->
+    <section class="ticker" aria-label="Quick plant facts">
+      <div class="ticker__track" aria-hidden="true">
+        <span>🌱 Over 390,000 plant species documented</span>
+        <span>💧 Most plants die from overwatering, not drought</span>
+        <span>☀️ Light is the #1 factor in plant health</span>
+        <span>🪴 Repot every 12–18 months for optimal growth</span>
+        <span>🌿 Talking to plants may boost growth by 10%</span>
+        <span>🌱 Over 390,000 plant species documented</span>
+        <span>💧 Most plants die from overwatering, not drought</span>
+        <span>☀️ Light is the #1 factor in plant health</span>
+        <span>🪴 Repot every 12–18 months for optimal growth</span>
+        <span>🌿 Talking to plants may boost growth by 10%</span>
+      </div>
+    </section>
+
+    <!-- =========== ABOUT =========== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="about__container">
+        <div class="about__label-col">
+          <p class="section-label">Our Philosophy</p>
+        </div>
+        <div class="about__text-col">
+          <h2 class="about__heading" id="about-heading">
+            Plants aren't decorations.<br />
+            <em>They're living beings.</em>
+          </h2>
+          <p class="about__body">
+            At Verdana, we believe plant wellbeing is a discipline — one that blends botany, environmental science, and intuitive observation. We translate complex horticultural research into rituals anyone can practise.
+          </p>
+          <p class="about__body">
+            From humidity mapping to soil pH calibration, every recommendation is rooted in evidence, not trend.
+          </p>
+        </div>
+        <div class="about__pillars">
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">◈</span>
+            <h3 class="pillar__title">Science-Backed</h3>
+            <p class="pillar__text">Every care tip is validated against peer-reviewed horticultural research.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">◈</span>
+            <h3 class="pillar__title">Accessible</h3>
+            <p class="pillar__text">No jargon. Clear rituals for beginners and seasoned growers alike.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">◈</span>
+            <h3 class="pillar__title">Holistic</h3>
+            <p class="pillar__text">Light, water, soil, and air — we address every axis of plant health.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">◈</span>
+            <h3 class="pillar__title">Sustainable</h3>
+            <p class="pillar__text">Practices that nurture your plants without harming the environment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== CARE GUIDE =========== -->
+    <section class="care-guide" id="care-guide" aria-labelledby="care-heading">
+      <div class="care-guide__header">
+        <p class="section-label">The Four Pillars</p>
+        <h2 class="care-guide__title" id="care-heading">Complete Care System</h2>
+      </div>
+
+      <div class="care-guide__grid">
+
+        <article class="care-card care-card--light" id="care-light">
+          <div class="care-card__index" aria-hidden="true">01</div>
+          <div class="care-card__icon" aria-hidden="true">☀️</div>
+          <h3 class="care-card__title">Light</h3>
+          <p class="care-card__desc">Light is the engine of photosynthesis. Understanding your light conditions — intensity, duration, and spectrum — is the single most transformative step in plant care.</p>
+          <ul class="care-card__list" role="list">
+            <li>Direct sun: 6+ hrs of unfiltered sunlight</li>
+            <li>Bright indirect: near south/east windows</li>
+            <li>Low light: tolerates 2–3 hrs of ambient light</li>
+            <li>Rotate pots every 2 weeks for even growth</li>
+          </ul>
+          <div class="care-card__meter" aria-label="Typical light requirement: high">
+            <span class="care-card__meter-label">Requirement</span>
+            <div class="care-card__dots">
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="care-card care-card--water" id="care-water">
+          <div class="care-card__index" aria-hidden="true">02</div>
+          <div class="care-card__icon" aria-hidden="true">💧</div>
+          <h3 class="care-card__title">Water</h3>
+          <p class="care-card__desc">Overwatering kills more houseplants than any other cause. Learn to read your plant's thirst — not the calendar — with the finger test and soil moisture indicators.</p>
+          <ul class="care-card__list" role="list">
+            <li>Check soil 2 inches deep before watering</li>
+            <li>Use room-temperature, filtered water</li>
+            <li>Ensure pots have drainage holes</li>
+            <li>Reduce watering by 50% in winter months</li>
+          </ul>
+          <div class="care-card__meter" aria-label="Typical water requirement: moderate">
+            <span class="care-card__meter-label">Requirement</span>
+            <div class="care-card__dots">
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="care-card care-card--soil" id="care-soil">
+          <div class="care-card__index" aria-hidden="true">03</div>
+          <div class="care-card__icon" aria-hidden="true">🪱</div>
+          <h3 class="care-card__title">Soil & Nutrients</h3>
+          <p class="care-card__desc">Soil is more than a medium — it's a living ecosystem. The right mix provides drainage, aeration, and a slow-release nutrient reservoir your plant draws from over months.</p>
+          <ul class="care-card__list" role="list">
+            <li>pH 6.0–7.0 suits most tropical houseplants</li>
+            <li>Fertilise every 4 weeks in growing season</li>
+            <li>Add perlite for drainage improvement</li>
+            <li>Flush soil quarterly to prevent salt buildup</li>
+          </ul>
+          <div class="care-card__meter" aria-label="Typical soil requirement: moderate">
+            <span class="care-card__meter-label">Requirement</span>
+            <div class="care-card__dots">
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="care-card care-card--air" id="care-air">
+          <div class="care-card__index" aria-hidden="true">04</div>
+          <div class="care-card__icon" aria-hidden="true">🌬️</div>
+          <h3 class="care-card__title">Air & Humidity</h3>
+          <p class="care-card__desc">Tropical plants crave humidity levels of 50–70%. Dry indoor air is a silent stressor, causing leaf tip browning, stunted growth, and increased pest vulnerability.</p>
+          <ul class="care-card__list" role="list">
+            <li>Group plants together to raise local humidity</li>
+            <li>Use a pebble tray with water beneath the pot</li>
+            <li>Mist leaves in the morning, not at night</li>
+            <li>Avoid cold draughts from windows and A/C</li>
+          </ul>
+          <div class="care-card__meter" aria-label="Typical air requirement: high">
+            <span class="care-card__meter-label">Requirement</span>
+            <div class="care-card__dots">
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot care-card__dot--active" aria-hidden="true"></span>
+              <span class="care-card__dot" aria-hidden="true"></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========== FEATURED PLANTS =========== -->
+    <section class="plants" id="plants" aria-labelledby="plants-heading">
+      <div class="plants__header">
+        <p class="section-label">Curated Collection</p>
+        <h2 class="plants__title" id="plants-heading">Meet the Plants</h2>
+        <p class="plants__subtitle">Six iconic species with full care profiles, common ailments, and seasonal notes.</p>
+      </div>
+
+      <div class="plants__grid">
+
+        <article class="plant-card" tabindex="0" aria-label="Monstera Deliciosa care profile">
+          <div class="plant-card__badge plant-card__badge--easy">Easy</div>
+          <div class="plant-card__emoji" aria-hidden="true">🌿</div>
+          <h3 class="plant-card__name">Monstera Deliciosa</h3>
+          <p class="plant-card__latin">Swiss Cheese Plant</p>
+          <div class="plant-card__tags">
+            <span class="tag">Tropical</span>
+            <span class="tag">Air-Purifying</span>
+            <span class="tag">Fast-Growing</span>
+          </div>
+          <dl class="plant-card__specs">
+            <div class="plant-card__spec">
+              <dt>Light</dt><dd>Bright Indirect</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Water</dt><dd>Weekly</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Humidity</dt><dd>60–80%</dd>
+            </div>
+          </dl>
+          <p class="plant-card__tip">Pro tip: Yellow leaves usually signal overwatering — let the top 2 inches of soil dry out before watering again.</p>
+        </article>
+
+        <article class="plant-card" tabindex="0" aria-label="Fiddle Leaf Fig care profile">
+          <div class="plant-card__badge plant-card__badge--advanced">Advanced</div>
+          <div class="plant-card__emoji" aria-hidden="true">🌳</div>
+          <h3 class="plant-card__name">Ficus Lyrata</h3>
+          <p class="plant-card__latin">Fiddle Leaf Fig</p>
+          <div class="plant-card__tags">
+            <span class="tag">Statement</span>
+            <span class="tag">Dramatic</span>
+            <span class="tag">Architectural</span>
+          </div>
+          <dl class="plant-card__specs">
+            <div class="plant-card__spec">
+              <dt>Light</dt><dd>Bright Direct</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Water</dt><dd>Every 10 days</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Humidity</dt><dd>30–65%</dd>
+            </div>
+          </dl>
+          <p class="plant-card__tip">Pro tip: Never move a Fiddle Leaf Fig once it's settled — they hate disruption. Find its spot and commit.</p>
+        </article>
+
+        <article class="plant-card" tabindex="0" aria-label="Pothos care profile">
+          <div class="plant-card__badge plant-card__badge--easy">Easy</div>
+          <div class="plant-card__emoji" aria-hidden="true">🍃</div>
+          <h3 class="plant-card__name">Epipremnum Aureum</h3>
+          <p class="plant-card__latin">Golden Pothos</p>
+          <div class="plant-card__tags">
+            <span class="tag">Beginner</span>
+            <span class="tag">Trailing</span>
+            <span class="tag">Low-Light</span>
+          </div>
+          <dl class="plant-card__specs">
+            <div class="plant-card__spec">
+              <dt>Light</dt><dd>Low to Bright</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Water</dt><dd>Every 1–2 wks</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Humidity</dt><dd>50–70%</dd>
+            </div>
+          </dl>
+          <p class="plant-card__tip">Pro tip: Variegated leaves need more light to maintain their golden patterns — shade causes reversion to solid green.</p>
+        </article>
+
+        <article class="plant-card" tabindex="0" aria-label="Peace Lily care profile">
+          <div class="plant-card__badge plant-card__badge--moderate">Moderate</div>
+          <div class="plant-card__emoji" aria-hidden="true">🌸</div>
+          <h3 class="plant-card__name">Spathiphyllum</h3>
+          <p class="plant-card__latin">Peace Lily</p>
+          <div class="plant-card__tags">
+            <span class="tag">Flowering</span>
+            <span class="tag">Air-Purifying</span>
+            <span class="tag">Shade-Tolerant</span>
+          </div>
+          <dl class="plant-card__specs">
+            <div class="plant-card__spec">
+              <dt>Light</dt><dd>Low to Medium</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Water</dt><dd>Weekly</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Humidity</dt><dd>50–60%</dd>
+            </div>
+          </dl>
+          <p class="plant-card__tip">Pro tip: A drooping Peace Lily is asking for water — it bounces back within hours of a thorough drink.</p>
+        </article>
+
+        <article class="plant-card" tabindex="0" aria-label="Succulent care profile">
+          <div class="plant-card__badge plant-card__badge--easy">Easy</div>
+          <div class="plant-card__emoji" aria-hidden="true">🌵</div>
+          <h3 class="plant-card__name">Echeveria Elegans</h3>
+          <p class="plant-card__latin">Mexican Snowball</p>
+          <div class="plant-card__tags">
+            <span class="tag">Succulent</span>
+            <span class="tag">Drought-Tolerant</span>
+            <span class="tag">Compact</span>
+          </div>
+          <dl class="plant-card__specs">
+            <div class="plant-card__spec">
+              <dt>Light</dt><dd>Full Sun</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Water</dt><dd>Every 2–3 wks</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Humidity</dt><dd>10–40%</dd>
+            </div>
+          </dl>
+          <p class="plant-card__tip">Pro tip: Water the soil, never the rosette — moisture trapped in the leaves causes rot at the crown.</p>
+        </article>
+
+        <article class="plant-card" tabindex="0" aria-label="Snake Plant care profile">
+          <div class="plant-card__badge plant-card__badge--easy">Easy</div>
+          <div class="plant-card__emoji" aria-hidden="true">🗡️</div>
+          <h3 class="plant-card__name">Sansevieria Trifasciata</h3>
+          <p class="plant-card__latin">Snake Plant</p>
+          <div class="plant-card__tags">
+            <span class="tag">Indestructible</span>
+            <span class="tag">Air-Purifying</span>
+            <span class="tag">Low-Light</span>
+          </div>
+          <dl class="plant-card__specs">
+            <div class="plant-card__spec">
+              <dt>Light</dt><dd>Any Light</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Water</dt><dd>Monthly</dd>
+            </div>
+            <div class="plant-card__spec">
+              <dt>Humidity</dt><dd>25–50%</dd>
+            </div>
+          </dl>
+          <p class="plant-card__tip">Pro tip: The snake plant produces oxygen at night — making it one of the best bedroom plants on earth.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========== DIAGNOSIS TOOL =========== -->
+    <section class="diagnosis" id="diagnosis" aria-labelledby="diagnosis-heading">
+      <div class="diagnosis__container">
+        <div class="diagnosis__intro">
+          <p class="section-label">Symptom Checker</p>
+          <h2 class="diagnosis__title" id="diagnosis-heading">Diagnose Your Plant</h2>
+          <p class="diagnosis__subtitle">Select a symptom and get instant, evidence-based diagnosis and treatment recommendations.</p>
+        </div>
+
+        <div class="diagnosis__tool">
+          <div class="diagnosis__symptoms" role="group" aria-label="Select a plant symptom">
+            <button class="symptom-btn symptom-btn--active" data-symptom="yellow" aria-pressed="true">🟡 Yellow Leaves</button>
+            <button class="symptom-btn" data-symptom="brown" aria-pressed="false">🟤 Brown Tips</button>
+            <button class="symptom-btn" data-symptom="drooping" aria-pressed="false">😔 Drooping</button>
+            <button class="symptom-btn" data-symptom="spots" aria-pressed="false">🔴 Dark Spots</button>
+            <button class="symptom-btn" data-symptom="leggy" aria-pressed="false">↕️ Leggy Growth</button>
+            <button class="symptom-btn" data-symptom="rootbound" aria-pressed="false">🪴 Root Bound</button>
+          </div>
+
+          <div class="diagnosis__result" id="diagnosis-result" aria-live="polite" aria-atomic="true">
+            <div class="diagnosis__result-inner">
+              <div class="diagnosis__result-header">
+                <span class="diagnosis__severity diagnosis__severity--moderate" id="diagnosis-severity">Moderate Concern</span>
+                <h3 class="diagnosis__result-title" id="diagnosis-title">Overwatering / Root Rot</h3>
+              </div>
+              <p class="diagnosis__result-desc" id="diagnosis-desc">Yellow leaves are the #1 symptom of overwatering. When roots sit in soggy soil, they cannot absorb oxygen, causing them to rot. The plant signals distress through yellowing from the bottom up.</p>
+              <div class="diagnosis__steps">
+                <h4 class="diagnosis__steps-title">Treatment Steps</h4>
+                <ol class="diagnosis__step-list" id="diagnosis-steps">
+                  <li>Remove the plant from its pot and inspect the roots.</li>
+                  <li>Trim any black, mushy roots with sterilised scissors.</li>
+                  <li>Allow roots to air-dry for 2–4 hours before repotting.</li>
+                  <li>Repot in fresh, well-draining soil with added perlite.</li>
+                  <li>Wait until the top 2 inches are completely dry before watering.</li>
+                </ol>
+              </div>
+              <div class="diagnosis__prevention">
+                <span class="diagnosis__prevention-label">Prevention:</span>
+                <span id="diagnosis-prevention">Always check soil moisture before watering. Use a moisture meter for precision.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== SEASONAL CALENDAR =========== -->
+    <section class="seasonal" aria-labelledby="seasonal-heading">
+      <div class="seasonal__header">
+        <p class="section-label">Year-Round Rituals</p>
+        <h2 class="seasonal__title" id="seasonal-heading">Seasonal Care Calendar</h2>
+      </div>
+      <div class="seasonal__grid">
+        <article class="season-card season-card--spring">
+          <div class="season-card__icon" aria-hidden="true">🌱</div>
+          <h3 class="season-card__name">Spring</h3>
+          <p class="season-card__period">Mar — May</p>
+          <ul class="season-card__tasks" role="list">
+            <li>Resume regular watering schedule</li>
+            <li>Begin monthly fertilising</li>
+            <li>Repot root-bound plants</li>
+            <li>Check for pests after winter dormancy</li>
+            <li>Propagate cuttings for new growth</li>
+          </ul>
+        </article>
+        <article class="season-card season-card--summer">
+          <div class="season-card__icon" aria-hidden="true">☀️</div>
+          <h3 class="season-card__name">Summer</h3>
+          <p class="season-card__period">Jun — Aug</p>
+          <ul class="season-card__tasks" role="list">
+            <li>Increase watering frequency</li>
+            <li>Shield from harsh afternoon sun</li>
+            <li>Mist daily in hot, dry conditions</li>
+            <li>Fertilise every 2–3 weeks</li>
+            <li>Move outdoor plants inside during heatwaves</li>
+          </ul>
+        </article>
+        <article class="season-card season-card--autumn">
+          <div class="season-card__icon" aria-hidden="true">🍂</div>
+          <h3 class="season-card__name">Autumn</h3>
+          <p class="season-card__period">Sep — Nov</p>
+          <ul class="season-card__tasks" role="list">
+            <li>Reduce watering by 30%</li>
+            <li>Taper fertilising to every 6 weeks</li>
+            <li>Move plants away from cold windows</li>
+            <li>Prune dead leaves and stems</li>
+            <li>Add supplemental grow lights if needed</li>
+          </ul>
+        </article>
+        <article class="season-card season-card--winter">
+          <div class="season-card__icon" aria-hidden="true">❄️</div>
+          <h3 class="season-card__name">Winter</h3>
+          <p class="season-card__period">Dec — Feb</p>
+          <ul class="season-card__tasks" role="list">
+            <li>Water only when soil is completely dry</li>
+            <li>Pause fertilising entirely</li>
+            <li>Keep away from cold draughts</li>
+            <li>Maintain 18–22°C room temperature</li>
+            <li>Wipe leaves to maximise light absorption</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========== NEWSLETTER / CTA =========== -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="cta-section__container">
+        <div class="cta-section__text">
+          <p class="section-label section-label--light">Plant Wisdom · Delivered Weekly</p>
+          <h2 class="cta-section__title" id="cta-heading">Grow with Verdana</h2>
+          <p class="cta-section__subtitle">Weekly care guides, seasonal alerts, and expert diagnostics — straight to your inbox. No spam. Just botany.</p>
+        </div>
+        <form class="cta-section__form" id="newsletter-form" novalidate aria-label="Newsletter signup">
+          <div class="cta-section__field">
+            <label for="email-input" class="sr-only">Your email address</label>
+            <input
+              type="email"
+              id="email-input"
+              class="cta-section__input"
+              placeholder="your@email.com"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+            <button type="submit" class="btn btn--submit" aria-label="Subscribe to newsletter">Subscribe</button>
+          </div>
+          <p class="cta-section__notice" id="form-notice" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="site-footer" id="contact" aria-labelledby="footer-heading">
+    <div class="site-footer__container">
+      <div class="site-footer__brand">
+        <a href="#home" class="nav__logo site-footer__logo" aria-label="Verdana home">
+          <span class="nav__logo-icon" aria-hidden="true">✦</span>
+          <span class="nav__logo-text">Verdana</span>
+        </a>
+        <p class="site-footer__tagline">Plant wellbeing, elevated.</p>
+        <p class="site-footer__copy">© 2026 Verdana Plant Studio. All rights reserved.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <h3 class="site-footer__nav-title" id="footer-heading">Explore</h3>
+        <ul role="list">
+          <li><a href="#about" class="site-footer__link">About</a></li>
+          <li><a href="#care-guide" class="site-footer__link">Care Guide</a></li>
+          <li><a href="#plants" class="site-footer__link">Plant Profiles</a></li>
+          <li><a href="#diagnosis" class="site-footer__link">Symptom Checker</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__contact">
+        <h3 class="site-footer__nav-title">Get in Touch</h3>
+        <address>
+          <ul role="list">
+            <li><a href="mailto:hello@verdana.studio" class="site-footer__link">hello@verdana.studio</a></li>
+            <li><a href="tel:+15551234567" class="site-footer__link">+1 (555) 123-4567</a></li>
+            <li class="site-footer__addr">123 Botanical Lane,<br />Greenhouse District, CA 90210</li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="site-footer__social">
+        <h3 class="site-footer__nav-title">Follow Along</h3>
+        <div class="site-footer__social-links">
+          <a href="#" class="social-link" aria-label="Verdana on Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="Verdana on Pinterest">PI</a>
+          <a href="#" class="social-link" aria-label="Verdana on YouTube">YT</a>
+          <a href="#" class="social-link" aria-label="Verdana on X/Twitter">𝕏</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>Built with love for plants everywhere 🌿 · Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
